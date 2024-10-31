@@ -1,0 +1,278 @@
+﻿GIT Homework 1
+
+
+
+
+JSON
+
+
+ 1. Создать внешний репозиторий c названием JSON. 
+https://github.com/aksiniyaa → Create new... → New repository → в строке Repository name пишем JSON → ставим галочку рядом с Add a README file →  Create repository
+
+
+2. Клонировать репозиторий JSON на локальный компьютер. 
+https://github.com/aksiniyaa → "<> Code" → вкладка "Local" → вкладка "HTTPS" → "Copy url to clipboard"→ открыть окно Git Bash (на компьютере)и ввести:
+git clone https://github.com/aksiniyaa/git.git
+
+
+ 3. Внутри локального JSON создать файл “new.json”.
+vim new.json
+ESC → :wq → Enter
+
+
+
+
+ 4. Добавить файл под гит.
+git add new.json 
+
+
+ 5. Закоммитить файл. - 
+git commit –m "add new.json file"
+
+
+ 6. Отправить файл на внешний GitHub репозиторий.
+git push origin main 
+
+
+7. Отредактировать содержимое файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON. 
+vim new.json
+i
+ {
+ "FIO": Oleg Komandirov,
+ "Age": 36,
+ "Pets": 2,
+ "Expected salary": 100000000
+ }
+ESC → :wq → Enter
+git add .
+git commit -m "add new.json file"
+
+
+ 8. Отправить изменения на внешний репозиторий. 
+git push origin main
+
+
+ 9. Создать файл preferences.json
+vim preferences.json
+ESC → :wq → Enter
+
+
+ 10. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+vim preferences.json
+i
+{
+"film" : "Queen’s move",
+"show" : "Trigger",
+"food" : "rice",
+"season" : "autumn",
+"country" : "Portugal"
+}
+ESC → :wq → Enter
+git add preferences.json
+git commit -m "add preferences.json" 
+git push origin main
+
+
+ 11. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON 
+vim sklls.json
+i
+{
+"skills" : ["theory", "terminal", "git", "devtools", "postman", "sql", "jmeter", "swagger"]
+}
+ESC → :wq → Enter
+git add . 
+git commit -m "add sklls.json file"
+
+
+ 12. Отправить сразу 2 файла на внешний репозиторий.
+git push origin main
+
+
+ 13. На веб интерфейсе создать файл bug_report.json. 
+https://github.com/aksiniyaa → зайти в репозиторий “JSON” → "Add file" → "Create new file" → дать имя файла bug_report.json 
+
+
+ 14. Сделать Commit changes (сохранить) изменения на веб интерфейсе. - git commit 
+"Commit changes…" → "Commit changes"
+
+
+ 15. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+bug_report.json → "Edit this file" → вставить данные в формате JSON → 
+   {
+       "bug_id": "2",
+       "severity": "high",
+       "title": "The error 404 is displayed in the “About the app” section when tapping the item",
+       "precondition": [
+           "The app is launched",
+           "The app is opened", 
+       "steps": [
+           "Tap the burger menu",
+           "Tap the “About the app” item",
+       ],
+       "actual_result": "The error 404 is displayed"
+       "expected_result": "The page “About the app” is opened",
+   }
+
+
+ 16. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+"Commit changes…" → "Update bug_report.json" → галочку рядом с с "Commit directly to the main branch" → "Commit changes"
+
+
+ 17. Синхронизировать внешний и локальный репозиторий JSON 
+git add —-all
+git commit —-all
+git pull origin main
+git push origin main
+
+
+
+
+
+
+XML
+
+
+ 18. Создать внешний репозиторий c названием XML.
+Create new... → New repository → в строке Repository name пишем XML → ставим галочку рядом с Add a README file →  Create repository
+
+
+ 19. Клонировать репозиторий XML на локальный компьютер.
+на странице репозитория → "<> Code" → вкладка "Local" → вкладка "HTTPS" → "Copy url to clipboard" → открыть окно Git Bash (на компьютере) → в окно вставить скопированный url - “git clone https://github.com/aksiniyaa/xml.git”
+
+
+ 20. Внутри локального XML создать файл “new.xml”.
+cd/D:/User/Desktop/git_dz
+открыть окно GitBash и ввести:
+echo > new.xml
+
+
+ 21. Добавить файл под гит.
+git add .
+
+
+ 22. Закоммитить файл.
+git commit -m "add new.xml file"
+
+
+ 23. Отправить файл на внешний GitHub репозиторий.
+git push origin main
+
+
+ 24. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML. 
+vim new.xml
+i
+<?xml version="1.0" encoding="UTF-8"?>
+<person>
+    <name>Oleg Ivanov</name>
+    <age>33</age>
+    <occupation>1</occupation>
+    <Expected salary>100000000</Expected salary>
+</person>
+ESC → :wq → Enter
+git add .
+git commit -m “add new.xml file”
+
+
+ 25. Отправить изменения на внешний репозиторий. 
+ git push origin main
+
+
+ 26. Создать файл preferences.xml 
+vim preferences.xml
+ESC → :wq → Enter
+
+
+ 27. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+vim preferences.xml
+i
+<?xml version="1.0" encoding="UTF-8"?>
+<person>
+    <preference1>green tea</preference1>
+    <preference2>spring</preference2>
+    <preference3>Cyprus</preference3>
+</person>
+ESC → :wq → Enter
+git add .
+git commit -m “add preferences.xml”
+git push origin main
+
+
+ 28. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+vim sklls.xml
+i
+<?xml version="1.0" encoding="UTF-8"?>
+<skills>
+    <skill>
+        <name>Terminal</name>
+    </skill>
+    <skill>
+        <name>Git</name>
+    </skill>
+    <skill>
+        <name>DevTools</name>
+    </skill>
+    <skill>
+        <name>Postman</name>
+    </skill>
+    <skill>
+        <name>SQL</name>
+    </skill>
+    <skill>
+        <name>Jmeter</name>
+    </skill>
+    <skill>
+        <name>Swagger</name>
+    </skill>
+</skills>
+ESC → :wq → Enter
+git add .
+
+
+ 29. Сделать коммит в одну строку.
+git commit -m sklls.xml
+ 
+ 30. Отправить сразу 2 файла на внешний репозиторий.
+git push origin main
+
+
+ 31. На веб интерфейсе создать файл bug_report.xml.
+https://github.com/aksiniyaa → открыть репозиторий git → "Add file" → "Create new file" → ввести bug_report.xml в поле "Name your file…" → Enter
+
+
+ 32. Сделать Commit changes (сохранить) изменения на веб интерфейсе. 
+в разделе "Commit changes" ввести
+- *"Создан файл bug_report.xml"* → "Commit directly to the main branch" → "Commit changes"
+
+
+ 33. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+вкладка "Code" файла → нажать на иконку "Edit this file" → добавить баг-репорт в формате XML:
+<?xml version="1.0" encoding="UTF-8"?>
+<bugReports>
+    <bugReport>
+        <id>2</id>
+        <severity>high</severity>
+        <title>The error 404 is displayed in the “About the app” section when tapping the item</title>
+        <precondition>
+            <precondition>The app is launched</precondition>
+            <precondition>The app is opened</precondition>
+        <steps>
+            <step>Tap the burger menu</step>
+            <step>Tap the “About the app” item</step>
+        </steps>
+        <actualResult>The error 404 is displayed</actualResult>
+        <expectedResult>The page “About the app” is opened</expectedResult>
+        <status>in process</status>
+    </bugReport>
+</bugReports>
+
+
+ 34. Сделать Commit changes (сохранить) изменения на веб интерфейсе. 
+Commit changes… → "Added bug report in format XML" → ставим галочку рядом с Commit directly to the main branch → Commit changes
+
+
+ 35. Синхронизировать внешний и локальный репозиторий XML
+в окне GitBush:
+git add —-all
+git commit -m "add all new changes"
+git pull origin main
+git push origin main
